@@ -27,5 +27,12 @@ sudo cp ~/.local/share/mkcert/rootCA.pem  ca.pem
 
 3. run example:
 ```
-go rum main.go
+make run CMD='go run main.go'
 ```
+
+## Maintenance checklist
+
+- [x] Go runtime updated to 1.26.5.
+- [x] NATS server/client and gotro dependencies refreshed.
+- [x] `make test` compiles the example without starting NATS.
+- [x] `make verify-dependency-security` and `make vulncheck` check dependency security.
